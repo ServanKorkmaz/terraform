@@ -45,7 +45,7 @@ resource_group_name = azurerm_resource_group.rg.name
 
 ip_configuration {
     name                          = "internal"
-    subnet_id                     = azurerm_subnet.subent.id        # <- nytt
+    subnet_id                     = azurerm_subnet.subnet.id        # <- nytt
     private_ip_address_allocation = "Dynamic"
 }
 }
